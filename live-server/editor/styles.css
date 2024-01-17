@@ -1,0 +1,54 @@
+:root {
+  --frame-border: 5px solid #ddd;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.main {
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  display: flex;
+}
+.main .left,
+.main .right {
+  flex: 1;
+  height: 100%;
+}
+.main .left {
+  display: flex;
+  flex-direction: column;
+}
+.main .right {
+  border-left: var(--frame-border);
+}
+
+/* left */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.header button {
+  height: 40px;
+  align-self: center;
+}
+.editor {
+  flex-grow: 1;
+  position: relative;
+  border-top: var(--frame-border);
+}
+
+/* right */
+
+.main .right > iframe {
+  width: 100%;
+  height: 100%;
+}

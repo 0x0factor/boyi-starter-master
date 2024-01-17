@@ -1,0 +1,55 @@
+{
+  "apps" : [
+    {
+      "name": "Self Hosted",
+      "items": [
+        {"name":"Boyi Blog","url":"https://www.boyilu.com/","icon":"post-outline"},
+        {"name":"Boyi Blog Data","url":"https://analytics.umami.is/share/Q3V1ypOg91PhCWip/Boyi-Blog","icon":"chart-areaspline"},
+        {"name":"ChatGPT","url":"https://chatgpt.boyilu.com/", "icon":"robot-confused-outline"}
+      ]
+    },
+    {
+      "name": "Third Party",
+      "items": [
+        {"name":"xLog","url":"https://www.boyilu.com/","icon":"post"},
+        {"name":"xFeed","url":"https://xfeed.app/u/boyi","icon":"comment-quote-outline"},
+        {"name":"xChar","url":"https://xchar.app/boyi","icon":"account-details-outline"}
+      ]
+    },
+    {
+      "name": "Favorite",
+      "items": [
+        {"name":"Yu Blog","url":"https://www.pseudoyu.com","icon":"post-outline"},
+        {"name":"Lao Gao YouTube","url":"https://www.youtube.com/@laogao","icon":"youtube"}
+      ]
+    }
+  ],
+  "bookmarks" : [
+    {
+      "category": "Surfing",
+      "links": [
+        {
+          "name": "YouTube",
+          "url": "https://www.youtube.com"
+        },
+        {
+          "name": "Netflix",
+          "url": "https://www.netflix.com/"
+        },
+        {
+          "name": "HBO",
+          "url": "https://play.max.com/"
+        }
+      ]
+    },
+    {
+      "category": "Tool",
+      "links": [
+        {
+          "name": "Excalidraw",
+          "url": "https://excalidraw.com"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+#modal {
+  overflow-y: auto;
+  bottom: 0;
+  left: 0;
+  display: none;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.3s;
+  z-index: 20;
+
+  &:target {
+    display: block;
+    pointer-events: auto;
+  }
+
+  > div {
+    background-color: #ffffff;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.25);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    margin-top: calc(50vh - 220px);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    color: #333333;
+    font-size: 2em;
+    margin: 0 0 .5em;
+  }
+
+  h2 {
+    margin: 1em 0 .5em;
+    color: initial;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer {
+    padding-top: 1em;
+    border-top: 1px solid #aaa;
+    a {
+      margin-right: 1.5em;
+      color: initial;
+    }
+  }
+}
+
+.modal-close {
+  color: #000000;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+#modal_init a {
+  bottom: 1vh;
+  color: var(--color-text-acc);
+  left: 1vw;
+  position: fixed;
+}
+
+#modal_init a:hover {
+  color: var(--color-text-pri);
+}
+
+#modal-theme {
+  border-bottom: 0px solid var(--color-text-acc);
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}

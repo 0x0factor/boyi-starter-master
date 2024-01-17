@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Boyi Starter</title>
+  <meta charset="utf-8">
+  <meta name="description" content="a startpage for your server and / or new tab page">
+  <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+  <link rel="shortcut icon" href="/icon-512.png" type="image/png">
+  <link rel="stylesheet" href="/scss/styles.scss" />
+</head>
+
+<body>
+
+  <section id="modal">
+    <div>
+      <header id="modal-header">
+        <h1>Options</h1>
+        <a href="#" title="Close" class="modal-close">
+          {{{iconify 'close'}}}
+        </a>
+      </header>
+
+      <h2>Color themes</h2>
+
+      <div id="modal-theme">
+        <button data-theme="blackboard" class="theme-button theme-blackboard">Blackboard</button>
+        <button data-theme="gazette" class="theme-button theme-gazette">Gazette</button>
+        <button data-theme="espresso" class="theme-button theme-espresso">Espresso</button>
+        <button data-theme="cab" class="theme-button theme-cab">Cab</button>
+        <button data-theme="cloud" class="theme-button theme-cloud">Cloud</button>
+        <button data-theme="lime" class="theme-button theme-lime">Lime</button>
+        <button data-theme="passion" class="theme-button theme-passion">Passion</button>
+        <button data-theme="blues" class="theme-button theme-blues">Blues</button>
+        <button data-theme="chalk" class="theme-button theme-chalk">Chalk</button>
+        <button data-theme="tron" class="theme-button theme-tron">Tron</button>
+        <button data-theme="paper" class="theme-button theme-paper">Paper</button>
+        <button data-theme="initial" class="theme-button theme-initial">Initial</button>
+      </div>
+
+      <footer>
+        Project: <a href="https://github.com/reorx/sui2">reorx/suis</a>
+        Icons: <a href="https://icon-sets.iconify.design/mdi/">Iconify MDI</a>
+      </footer>
+    </div>
+  </section>
+
+  <div id="keyword"></div>
+
+  <main id="container">
+
+    <section id="header">
+      <h2 id="header_date"></h2>
+      <h1 id="header_greet"></h1>
+    </section>
+
+    {{#apps}}
+    <section class="apps">
+      <h3>{{name}}</h3>
+      <div class="apps_loop">
+        {{#items}}
+
+        <div class="apps_item_wrap">
+          <a href="{{url}}" target="_blank" class="apps_item">
+            <div class="apps_icon">
+            {{{iconify icon}}}
+            </div>
+            <div class="apps_text">
+              <span class="name">{{name}}</span>
+              <span class="domain">{{domain url}}</span>
+            </div>
+          </a>
+        </div>
+        {{/items}}
+      </div>
+    </section>
+    {{/apps}}
+
+    <section id="links">
+      <h3>Bookmarks</h3>
+      <div id="links_loop">
+        {{#bookmarks}}
+        <div class="links_category">
+          <h4>{{category}}</h4>
+          {{#links}}
+          <a href="{{url}}" target="{{target}}" class="links_item theme_color-border theme_text-select">{{name}}</a>
+          {{/links}}
+        </div>
+        {{/bookmarks}}
+      </div>
+    </section>
+  </main>
+
+  <div id="modal_init">
+    <a class="btn" href="#modal">
+      {{{iconify 'xbox-controller-menu'}}}
+    </a>
+  </div>
+
+  <script src="/js/main.js" type="module"></script>
+</body>
+
+</html>
